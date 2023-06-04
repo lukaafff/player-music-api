@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="musica">
+
+            <nav>
+                <div class="circle">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+                <div class="circle">
+                    <i class='bx bx-menu' ></i>
+                </div>
+            </nav>
+
+            <div>
+                <img src="" alt="imagem_musica" class="img-musica">
+            </div>
+
+            <h3 class="nome">Nome Música</h3>
+
+            <p class="artista">Nome Artista</p>
+
+            <audio src="" id="song"></audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="tempo">
+                <p class="duracao">00:00</p>
+                <p class="final">00:00</p>
+            </div>
+
+            <div class="controls">
+                <div><i class='bx bx-fast-forward bx-rotate-180' id="btnAnteriorMusica"></i></div>
+                <div onclick="playPause()"><i class='bx bx-play' id="ctrIcon"></i></div>
+                <div><i class='bx bx-fast-forward' id="btnProximaMusica"></i></div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
