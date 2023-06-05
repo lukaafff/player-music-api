@@ -15,35 +15,39 @@
 
             <nav>
                 <div class="circle">
-                    <i class='bx bx-chevron-left'></i>
+                    <i class='bx bx-chevron-left' id="btnVoltarMusicaTocando"></i>
                 </div>
                 <div class="circle">
-                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-menu' id="btnListaMusicas"></i>
                 </div>
             </nav>
 
-            <div>
-                <img src="" alt="imagem_musica" class="img-musica">
+            <div class="tocando">
+                <div>
+                    <img src="" alt="imagem_musica" class="img-musica">
+                </div>
+    
+                <h3 class="nome">Nome Música</h3>
+    
+                <p class="artista">Nome Artista</p>
+    
+                <audio src="" id="song"></audio>
+    
+                <input type="range" value="0" id="progress">
+    
+                <div class="tempo">
+                    <p class="duracao">00:00</p>
+                    <p class="final">00:00</p>
+                </div>
+    
+                <div class="controls">
+                    <div><i class='bx bx-fast-forward bx-rotate-180' id="btnAnteriorMusica"></i></div>
+                    <div onclick="playPause()"><i class='bx bx-play' id="ctrIcon"></i></div>
+                    <div><i class='bx bx-fast-forward' id="btnProximaMusica"></i></div>
+                </div>
             </div>
 
-            <h3 class="nome">Nome Música</h3>
-
-            <p class="artista">Nome Artista</p>
-
-            <audio src="" id="song"></audio>
-
-            <input type="range" value="0" id="progress">
-
-            <div class="tempo">
-                <p class="duracao">00:00</p>
-                <p class="final">00:00</p>
-            </div>
-
-            <div class="controls">
-                <div><i class='bx bx-fast-forward bx-rotate-180' id="btnAnteriorMusica"></i></div>
-                <div onclick="playPause()"><i class='bx bx-play' id="ctrIcon"></i></div>
-                <div><i class='bx bx-fast-forward' id="btnProximaMusica"></i></div>
-            </div>
+            <ul id="lista-musicas"></ul>
 
         </div>
         

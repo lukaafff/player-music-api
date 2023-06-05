@@ -48,6 +48,7 @@ nav .circle{
     width: 52px;
     height: 52px;
     font-size: 40px;
+    cursor: pointer;
 }
 
 
@@ -126,4 +127,26 @@ nav .circle{
     transform: scale(1.5);
     background: #FF899A;
     color: #D9D9D9;
+}
+
+#lista-musicas{
+    list-style: none;
+    cursor: pointer;
+}
+
+#lista-musicas li {
+    margin-bottom: 20px;
+    background: #4F4F4F;
+    padding: 20px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #D9D9D9;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar {
+    display: block;
 }
